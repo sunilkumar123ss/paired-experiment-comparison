@@ -1,0 +1,11 @@
+{
+  "slug": "paired-experiment-comparison",
+  "title": "Paired experiment comparison",
+  "description": "Compare experiments with matched random seeds using directional metric improvements and reproducible percentile bootstrap intervals.",
+  "category": "evaluation",
+  "demo_args": [
+    "--input",
+    "example.json"
+  ],
+  "expected_exit": 0
+}
