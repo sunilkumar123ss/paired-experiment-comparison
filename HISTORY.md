@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 3 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 4 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -15,7 +15,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 1 | 2023-02-25T17:51:22+05:30 | Define package metadata and local artifact exclusions (present) |
 | 2 | 2023-03-22T10:17:51+05:30 | Add synthetic input fixtures and reference data (present) |
 | 3 | 2023-04-18T09:33:12+05:30 | Implement percentile (present) |
-| 4 | 2023-04-20T13:04:49+05:30 | Implement compare (later stage) |
+| 4 | 2023-04-20T13:04:49+05:30 | Implement compare (present) |
 | 5 | 2023-06-06T10:27:34+05:30 | Expose the command-line demonstration and input handling (later stage) |
 | 6 | 2024-01-22T10:58:17+05:30 | Test constant paired gain (later stage) |
 | 7 | 2024-12-01T18:19:26+05:30 | Test minimize and reproducibility (later stage) |
