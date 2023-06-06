@@ -59,3 +59,25 @@ def compare(baseline, candidate, goals, resamples=2000, random_seed=7):
         }
     return {"paired_seeds": seeds, "resamples": resamples, "random_seed": random_seed, "metrics": output}
 
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--resamples", type=int, default=2000)
+    args = parser.parse_args()
+    try:
+        input_path = Path(args.input)
+        if not input_path.is_absolute():
+            input_path = Path(__file__).resolve().parent / input_path
+        with input_path.open(encoding="utf-8") as handle:
+            data = json.load(handle)
+        print(json.dumps(compare(data["baseline"], data["candidate"], data["goals"], args.resamples),
+                         indent=2, allow_nan=False))
+        return 0
+    except (ValueError, KeyError, TypeError, OSError) as error:
+        print(f"Invalid experiment comparison: {error}", file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    sys.exit(main())
