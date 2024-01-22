@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 5 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 6 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -17,7 +17,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 3 | 2023-04-18T09:33:12+05:30 | Implement percentile (present) |
 | 4 | 2023-04-20T13:04:49+05:30 | Implement compare (present) |
 | 5 | 2023-06-06T10:27:34+05:30 | Expose the command-line demonstration and input handling (present) |
-| 6 | 2024-01-22T10:58:17+05:30 | Test constant paired gain (later stage) |
+| 6 | 2024-01-22T10:58:17+05:30 | Test constant paired gain (present) |
 | 7 | 2024-12-01T18:19:26+05:30 | Test minimize and reproducibility (later stage) |
 | 8 | 2025-01-22T15:31:02+05:30 | Test no change boundary (later stage) |
 | 9 | 2025-05-06T14:01:46+05:30 | Test missing pair and nonfinite metric (later stage) |
