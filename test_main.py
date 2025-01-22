@@ -18,3 +18,7 @@ class ComparisonTests(unittest.TestCase):
         self.assertEqual(compare(*args)["metrics"]["score"]["mean_improvement"], 1)
         self.assertEqual(percentile([0, 10], 0.5), 5)
 
+    def test_no_change_boundary(self):
+        result = compare(runs([1, 1]), runs([1, 1]), {"score": "maximize"}, 100)
+        self.assertEqual(result["metrics"]["score"]["improved_seed_fraction"], 0)
+

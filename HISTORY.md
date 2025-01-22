@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 7 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 8 of 12. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -19,7 +19,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 5 | 2023-06-06T10:27:34+05:30 | Expose the command-line demonstration and input handling (present) |
 | 6 | 2024-01-22T10:58:17+05:30 | Test constant paired gain (present) |
 | 7 | 2024-12-01T18:19:26+05:30 | Test minimize and reproducibility (present) |
-| 8 | 2025-01-22T15:31:02+05:30 | Test no change boundary (later stage) |
+| 8 | 2025-01-22T15:31:02+05:30 | Test no change boundary (present) |
 | 9 | 2025-05-06T14:01:46+05:30 | Test missing pair and nonfinite metric (later stage) |
 | 10 | 2025-06-14T18:03:58+05:30 | Add one-command test, demonstration and CLI verification (later stage) |
 | 11 | 2026-03-07T17:35:12+05:30 | Run verification on the supported Python CI matrix (later stage) |
