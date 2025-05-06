@@ -22,3 +22,12 @@ class ComparisonTests(unittest.TestCase):
         result = compare(runs([1, 1]), runs([1, 1]), {"score": "maximize"}, 100)
         self.assertEqual(result["metrics"]["score"]["improved_seed_fraction"], 0)
 
+    def test_missing_pair_and_nonfinite_metric(self):
+        with self.assertRaises(ValueError):
+            compare(runs([1, 2]), runs([1, 2, 3]), {"score": "maximize"}, 100)
+        with self.assertRaises(ValueError):
+            compare(runs([1, 2]), runs([1, float("nan")]), {"score": "maximize"}, 100)
+
+
+if __name__ == "__main__":
+    unittest.main()
