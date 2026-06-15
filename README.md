@@ -1,11 +1,24 @@
 # Paired experiment comparison
 
-> **Disclosed reconstruction prepared on 24 October 2026.** The recorded Git dates are synthetic, not dates of past development. See [HISTORY.md](HISTORY.md).
+Compare baseline/candidate metric observations from the same random seeds. The included observations are synthetic, not measured model performance.
 
-This is an incomplete stage in a tutorial reconstruction of an already-completed reference implementation. Source, fixtures, tests, command-line behavior and verification are introduced in later stages. Only the final branch tip contains the complete documented package.
+~~~sh
+python3 main.py --input example.json --resamples 2000
+python3 -m unittest -v
+~~~
 
-## Intended scope of the final example
+Choose maximize or minimize per metric. Improvement is positive in the favorable direction. The report shows paired deltas, the fraction of seeds with strict improvement, and a percentile bootstrap interval for mean improvement. Resampling preserves baseline/candidate pairs. A fixed local random seed makes the report reproducible.
 
-Compare experiments with matched random seeds using directional metric improvements and reproducible percentile bootstrap intervals.
+At least two identical seed sets are required. Small numbers of seeds produce fragile intervals; the four-seed fixture illustrates computation only. The interval is not a paired test, multiplicity correction, deployment guarantee, or replacement for a well-designed evaluation.
 
-All examples are synthetic and educational. This reconstruction does not establish historical employment, deployment, usage, or production benchmarks.
+## Scope
+
+This is an educational implementation with synthetic fixtures. Run the tests and inspect the documented limits before adapting it.
+
+## Repository checks
+
+```sh
+python3 verify.py
+```
+
+This runs the isolated test suite, synthetic example, and CLI help. The included GitHub Actions workflow repeats these checks when the repository is published. No hosted CI result is claimed by the local verification report.
